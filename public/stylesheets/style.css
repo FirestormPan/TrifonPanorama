@@ -31,6 +31,10 @@ footer {
 }
 
 .roomCategory {
+  background-image: url('../images/flame-knight.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow: hidden;
   height: 230px;
   max-width: 410px;
@@ -51,3 +55,5 @@ footer {
   position: absolute;
   bottom: 12px;
 }
+
+
