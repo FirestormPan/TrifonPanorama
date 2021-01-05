@@ -2,6 +2,51 @@ doctype html
 html
   head
     title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css", integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z", crossorigin="anonymous")
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js", integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js", integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV", crossorigin="anonymous")
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    img(src="/images/flame-knight.jpg", alt="Hotel banner" style='width:100%; height:400px;')
+    h1(style="text-align:center")= title
+    br
+    br
+    br
+    div(class='container-fluid')
+      div(class='row ')
+        div(class='col-lg-1')
+        div(class='col-lg-10')
+
+        block content
+
+        div(class='col-sm-1')
+      div(class='row')
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+      div(class='row')
+        div(class='col-lg-6') alternatevely the standeard text
+        div(class='col-lg-6')
+          figure
+            a(href='https://www.google.com/maps/place/Panorama+Trifon+Haus/@40.0887948,23.9783163,17z/data=!4m8!3m7!1s0x14a8af14b8e6f42d:0x843ec61f33dfe9c6!5m2!4m1!1i2!8m2!3d40.0886307!4d23.9784484' target='_blank')
+              img(class='mapsImageStyle' src='images/hotelOnMaps.png' alt='google maps')
+              figcaption
+                | Click the image to open the location on Google Maps!
+    br
+    br
+    footer(style='padding-left: 20px')
+      h4
+        | &Gamma;&iota;&alpha; &kappa;&rho;&alpha;&tau;&eta;&sigma;&epsi;&iota;&sigmaf; &epsi;&delta;&omega;: krathseis@gmail.com 
+        br
+        br
+        | h edw :
+        |                 6983724324242
