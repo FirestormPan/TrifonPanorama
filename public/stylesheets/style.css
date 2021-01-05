@@ -1,6 +1,7 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: cadetblue;
+
 }
 
 a {
@@ -30,8 +31,29 @@ footer {
   width: 100%;
 }
 
+
+
+.CategoryBan {
+  text-align: center;
+  width: 75%;
+  background-color: azure;
+  opacity: 0.5;
+  border-radius: 25px 25px 0px 0px;
+  align-self: center;
+  position: absolute;
+  bottom: 12px;
+}
+
+
+.backButton {
+  position: absolute;
+  left: 12px;
+  background-color: rgb(241, 236, 160);
+  border-radius: 36px;
+}
+
 .roomCategory {
-  background-image: url('../images/flame-knight.jpg');
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,14 +68,18 @@ footer {
   cursor: pointer;
 }
 
-.CategoryBan {
-  width: 75%;
-  background-color: azure;
-  opacity: 0.5;
-  border-radius: 25px 25px 0px 0px;
-  align-self: center;
-  position: absolute;
-  bottom: 12px;
+/* [1] The container */
+.img-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
 }
 
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
 
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}

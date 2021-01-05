@@ -15,6 +15,6 @@ exports.room_info = function(req,res,next){
         return;
    }
      
-    res.render('roomCategory_Info', {categoryName: req.params.categoryName , information:'here is my info', imagePath:'../images/flame-knight.jpg'} );
+    res.render('roomCategory_Info', {title: req.params.categoryName , information:'here is my info', imagePath:'../images/flame-knight.jpg'} );
 };
 
