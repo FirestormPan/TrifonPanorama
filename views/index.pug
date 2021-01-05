@@ -4,4 +4,44 @@ block content
    
   p Welcome to #{title}
   br
+  div(class='container-fluid')
+  div(class='row')
+    h2 K&alpha;&tau;&eta;&gamma;&omicron;&rho;&iota;&epsi;&sigmaf; &delta;&omega;&mu;&alpha;&tau;&iota;&omega;&nu;:
+  div(class='row ')
+    div(class='col-sm-4')
+    
+      div(class='roomCategory' style='{this.state.styling.div}' onclick='{()')
+        | {
+        | this.props.handleChoice(this.props.categoryName);
+        | }}
+        | &gt;
+        div(class='CategoryBan')
+          h3(class='skatoprama') {this.props.categoryName}
+    div(class='col-sm-4')
+      roomcategory(imagepath='{"KnightsOnHorses.jpg"}' categoryname='{"Monoklina"}' handlechoice='{()')
+        | {
+        | this.handleChoice(&quot;Monoklina&quot;);
+        | }}
+        | /&gt;
+    div(class='col-sm-4')
+      roomcategory(imagepath='{"KnightsOnHorses.jpg"}' categoryname='{"Spiti' handlechoice='{()')
+        | {
+        | this.handleChoice(&quot;Spiti oloklhro&quot;);
+        | }}
+        | /&gt;
+  div(class='row')
+    div(class='col-sm-2')
+    div(class='col-sm-4')
+      roomcategory(imagepath='{"loneKnight.jpg"}' categoryname='{"Monoklina"}' handlechoice='{()')
+        | {
+        | this.handleChoice(&quot;Monoklina&quot;);
+        | }}
+        | /&gt;
+    div(class='col-sm-4')
+      roomcategory(imagepath='{"KnightsOnHorses.jpg"}' categoryname='{"Spiti' handlechoice='{()')
+        | {
+        | this.handleChoice(&quot;Spiti oloklhro&quot;);
+        | }}
+        | /&gt;
+    div(class='col-sm-2')
 

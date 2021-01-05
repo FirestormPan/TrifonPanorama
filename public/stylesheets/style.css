@@ -29,3 +29,25 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+.roomCategory {
+  overflow: hidden;
+  height: 230px;
+  max-width: 410px;
+  margin: 10px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  border: solid black;
+  cursor: pointer;
+}
+
+.CategoryBan {
+  width: 75%;
+  background-color: azure;
+  opacity: 0.5;
+  border-radius: 25px 25px 0px 0px;
+  align-self: center;
+  position: absolute;
+  bottom: 12px;
+}

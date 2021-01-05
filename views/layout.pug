@@ -9,7 +9,7 @@ html
     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js", integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV", crossorigin="anonymous")
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    img(src="/images/flame-knight.jpg", alt="Hotel banner" style='width:100%; height:400px;')
+    img(src="/images/flame-knight.jpg", alt="Hotel banner" class="baner" )
     h1(style="text-align:center")= title
     br
     br
@@ -33,12 +33,13 @@ html
         br
         br
         br
+        br
       div(class='row')
         div(class='col-lg-6') alternatevely the standeard text
         div(class='col-lg-6')
           figure
             a(href='https://www.google.com/maps/place/Panorama+Trifon+Haus/@40.0887948,23.9783163,17z/data=!4m8!3m7!1s0x14a8af14b8e6f42d:0x843ec61f33dfe9c6!5m2!4m1!1i2!8m2!3d40.0886307!4d23.9784484' target='_blank')
-              img(class='mapsImageStyle' src='images/hotelOnMaps.png' alt='google maps')
+              img(class='mapsImageStyle' src='../images/hotelOnMaps.png' alt='google maps')
               figcaption
                 | Click the image to open the location on Google Maps!
     br

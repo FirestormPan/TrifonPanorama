@@ -6,4 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Hotel Triphon Panorama' });
 });
 
+
+
+
 module.exports = router;
