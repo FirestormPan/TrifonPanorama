@@ -1,22 +1,65 @@
 extends layout
 
 
-
-
 block content
+
   button(class='backButton' onclick="location.href='/' ")
 
-    img(src='../images/sharp_keyboard_return_black_24dp.png' alt='oopsie')
+    img(src=`../images/sharp_keyboard_return_black_24dp.png` alt='oopsie')
     |   &Pi;&iota;&sigma;&omega; &sigma;&tau;&iota;&sigmaf; &kappa;&alpha;&tau;&eta;&gamma;&omicron;&rho;&iota;&epsi;&sigmaf;
   br
   br
   br
   br
-  p= information
-  img(class='imageStyle' src=imagePath alt='please refresh the page')
-  img(class='imageStyle' src=imagePath alt='please refresh ')
-  img(class='imageStyle' src=imagePath alt='please refresh ')
-  img(class='imageStyle' src=imagePath alt='please refresh ')
+  br
+  br
+  br
+  br
 
+  -var images=imagesCategory;
+
+
+    p= information
+  
+
+
+
+  
+  #myCarousel.carousel.slide(data-ride='carousel')  
 
     
+    .carousel-inner
+      .item.active
+        img(src=`../images/${title}Pics/${images[2]}`, alt="error" style=" height:600px; margin-left: auto;  margin-right: auto; display: block;")
+      each val, index in images
+        .item
+          img(src=`../images/${title}Pics/${images[index]}`, alt="error" style=" height:600px; margin-left: auto;  margin-right: auto; display: block;")
+
+
+    a.left.carousel-control(href='#myCarousel' data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left
+      span.sr-only Previous
+    a.right.carousel-control(href='#myCarousel' data-slide='next')
+      span.glyphicon.glyphicon-chevron-right
+      span.sr-only Next
+
+  each val, index in images
+      img(src=`../images/${title}Pics/${images[index]}`, , class="myFuckingIndicators" data-target='#myCarousel' data-slide-to=''+(index+1))
+    
+
+
+
+ 
+ 
+
+
+
+  
+
+
+
+
+
+
+
+  
