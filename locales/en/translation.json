@@ -1,0 +1,45 @@
+{
+    "home": {
+        "title": "Book shop",
+        "more_info_or_book": "For more information or to book a room, contact us:",
+        "categories": "Room Categories",
+        "description_header": "Hotel and Rooms Description",
+        "generalDescription": "Panorama Trifon Haus is located in Sarti, Chalkidiki. \n Suggested for all ages. Young couples, old couples and families with children as well. \n Very close to the center. Υou find all the taverns, the restaurants, the cafeterias and supermarkets. \n The beach is only 2 meters away. Vourvourou is 18 km away. \n For more information, send us an e-mail: ",
+        "providedList": ["Balcony", "A fully equipped kitchenette, allowing guests to prepare their own meals", "Air-conditioned units", "a TV", "Mosquito net"],
+
+        "total": "There are {{counter}} books in the list",
+        "buttonText": "Refresh button",
+        "buttonHTML": "<button onClick='window.location.reload();'>$t(buttonText)</button>"
+    },
+    "content": {
+        "side_sea": "Side sea view (2-3 beds)",
+        "front_sea": "Sea view (2-3 beds)",
+        "basements": "Semi-basements (2-4 beds)",
+        "apartments": "Apartments (4-5 beds)"
+    },
+    "roomInformation": {
+        "Side_Sea_View_Info": "here is the Side_Sea_View category info! paragraph length",
+        "Front_Sea_View_Info": "Great view of the beach, sea and mount Athos(Agion Oros).",
+        "Basements_Info":"Semi-basement rooms, with a small yard in the entrance. ",
+        "Apartments_Info":"Two-room apartments, suitable for families with kids."
+    },
+    "buttons": {
+        "back_button_text": "Go back to Categories"
+    },
+    "provided_list": {
+        "provided_header": "All rooms provide",
+        "provided_item_1": "Wi-Fi",
+        "provided_item_2": "A fully equipped kitchenette, allowing guests to prepare their own meals",
+        "provided_item_3": "Air-conditioned units",
+        "provided_item_4": "a TV",
+        "provided_item_5": "Mosquito net",
+        "provided_item_6":"small friedge 82cm.",
+        "provided_item_7":"Bathroom"
+
+    },
+
+    "footer": {
+        "bookHere": "Book a room by contacting us: "
+    }
+
+}

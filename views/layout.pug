@@ -1,12 +1,15 @@
 doctype html
 html
   head
-
-    title= title
+    title= t("content."+title,"HOTEL TRIPHON PANORAMA SARTI")
+    link( rel="icon" href="/images/HeadBanner.jpg" type="image/icon type")
 
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
 
+    link( rel="preconnect" href="https://fonts.gstatic.com")
+    link( href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet")
+    
     link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
@@ -14,11 +17,38 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
 
 
-  body
-    img(src="/images/flame-knight.jpg", alt="Hotel banner" class="baner" )
+  body  
+    img(src="/images/HeadBanner.jpg", alt="Hotel banner" class="baner")
+    div(class="container-fluid")
+      ul.nav.navbar-nav   
+        h4 #{t("home.more_info_or_book")}
+          a(href="mailto:trifonpanorama@gmail.com?subject=Hotel Panorama") 
+            |trifonpanorama@gmail.com  
+      ul.nav.navbar-nav.navbar-right      
+        li  
+          .btn-group
+            button.btn.btn-danger.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+              img(src="/images/flags/greekFlag.png" class="languageIcon", alt="(gr)")
+              img(src="/images/flags/united-kingdomFlag.png" class="languageIcon", alt="(en)")
+            .dropdown-menu
+              a.dropdown-item(href='?lng=gr') 
+                  img(src="/images/flags/greekFlag.png" class="languageIcon", alt="(gr)")
+                  | Ελληνικά 
+              .dropdown-divider    
+              a.dropdown-item(href='?lng=en') 
+                  img(src="/images/flags/united-kingdomFlag.png" class="languageIcon", alt="(en)")
+                  | English
+              .dropdown-divider
+        li
+        |      
+        li  
+          | &#169;    
+              
+    br  
+
     br
-    h1(style="text-align:center")= title
-    br
+    h1 #{t("content."+title,"Hotel Triphon Panorama")}
+    
     br
     br
     div(class='container-fluid')
@@ -33,16 +63,26 @@ html
         br
         br
         br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
+ 
+        
       div(class='row')
-        div(class='col-lg-6') alternatevely the standeard text
+        div(class='col-lg-6')
+          h3 #{t("home.description_header")}
+          p #{t("home.generalDescription")} 
+            a(href="https://mail.google.com/mail/u/2/#inbox?compose=new") 
+              |trifonpanorama@gmail.com
+          br
+          br
+          h5 #{t("provided_list.provided_header")} : 
+          
+          -var numberOfGeneralProvisions=7;
+          -for(let i=1;i<=numberOfGeneralProvisions;i++)
+            img(src="/images/baseline_done_black_24dp.png")
+            | #{t("provided_list.provided_item_"+i)}
+            br
+          
+    
+          
         div(class='col-lg-6')
           figure
             a(href='https://www.google.com/maps/place/Panorama+Trifon+Haus/@40.0887948,23.9783163,17z/data=!4m8!3m7!1s0x14a8af14b8e6f42d:0x843ec61f33dfe9c6!5m2!4m1!1i2!8m2!3d40.0886307!4d23.9784484' target='_blank')
@@ -52,9 +92,10 @@ html
     br
     br
     footer(style='padding-left: 20px')
-      h4
-        | &Gamma;&iota;&alpha; &kappa;&rho;&alpha;&tau;&eta;&sigma;&epsi;&iota;&sigmaf; &epsi;&delta;&omega;: krathseis@gmail.com 
-        br
-        br
-        | h edw :
-        |                 6983724324242
+      h4 
+        | #{t("footer.bookHere")} 
+        a(href="https://mail.google.com/mail/u/2/#inbox?compose=new") 
+          |trifonpanorama@gmail.com
+      hr  
+      p Mention for legal purposes: The icons are taken from  fonts.google.com, and flag icons from flaticon.com
+

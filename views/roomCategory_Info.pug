@@ -3,11 +3,10 @@ extends layout
 
 block content
 
-  button(class='backButton' onclick="location.href='/' ")
-
-    img(src=`../images/sharp_keyboard_return_black_24dp.png` alt='oopsie')
-    |   &Pi;&iota;&sigma;&omega; &sigma;&tau;&iota;&sigmaf; &kappa;&alpha;&tau;&eta;&gamma;&omicron;&rho;&iota;&epsi;&sigmaf;
-  br
+  button(class='backButton' onclick="location.href='/' "  )
+    img(src=`../images/baseline_keyboard_backspace_black_24dp.png` alt='back button')
+    |   #{t("buttons.back_button_text")}
+ 
   br
   br
   br
@@ -19,21 +18,27 @@ block content
   -var images=imagesCategory;
 
 
-    p= information
+  p #{t("roomInformation."+information)}  #{t("home.more_info_or_book")}    
+    a(href="mailto:trifonpanorama@gmail.com?subject=Hotel Panorama") 
+      |trifonpanorama@gmail.com 
   
 
-
+  button(class='backButton' onclick="location.href='/' "  style="right: -80%;")
+    img(src=`../images/baseline_keyboard_backspace_black_24dp.png`)
 
   
+  br
+  br
+
   #myCarousel.carousel.slide(data-ride='carousel')  
 
     
     .carousel-inner
       .item.active
-        img(src=`../images/${title}Pics/${images[2]}`, alt="error" style=" height:600px; margin-left: auto;  margin-right: auto; display: block;")
+        img(src=`../images/${title}Pics/${images[0]}`, alt="room image" style=" height:600px; margin-left: auto;  margin-right: auto; display: block;")
       each val, index in images
         .item
-          img(src=`../images/${title}Pics/${images[index]}`, alt="error" style=" height:600px; margin-left: auto;  margin-right: auto; display: block;")
+          img(src=`../images/${title}Pics/${images[index]}`, alt="room image" style=" height:600px; margin-left: auto;  margin-right: auto; display: block;")
 
 
     a.left.carousel-control(href='#myCarousel' data-slide='prev')
@@ -44,7 +49,7 @@ block content
       span.sr-only Next
 
   each val, index in images
-      img(src=`../images/${title}Pics/${images[index]}`, , class="myFuckingIndicators" data-target='#myCarousel' data-slide-to=''+(index+1))
+      img(src=`../images/${title}Pics/${images[index]}`, class="myFuckingIndicators" data-target='#myCarousel' data-slide-to=''+(index+1))
     
 
 
