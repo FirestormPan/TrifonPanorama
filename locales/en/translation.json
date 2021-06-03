@@ -1,15 +1,11 @@
 {
     "home": {
-        "title": "Book shop",
+
         "more_info_or_book": "For more information or to book a room, contact us:",
         "categories": "Room Categories",
         "description_header": "Hotel and Rooms Description",
         "generalDescription": "Panorama Trifon Haus is located in Sarti, Chalkidiki. \n Suggested for all ages. Young couples, old couples and families with children as well. \n Very close to the center. Υou find all the taverns, the restaurants, the cafeterias and supermarkets. \n The beach is only 2 meters away. Vourvourou is 18 km away. \n For more information, send us an e-mail: ",
-        "providedList": ["Balcony", "A fully equipped kitchenette, allowing guests to prepare their own meals", "Air-conditioned units", "a TV", "Mosquito net"],
-
-        "total": "There are {{counter}} books in the list",
-        "buttonText": "Refresh button",
-        "buttonHTML": "<button onClick='window.location.reload();'>$t(buttonText)</button>"
+        "providedList": ["Balcony", "A fully equipped kitchenette, allowing guests to prepare their own meals", "Air-conditioned units", "a TV", "Mosquito net"]
     },
     "content": {
         "side_sea": "Side sea view (2-3 beds)",

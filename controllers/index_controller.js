@@ -7,4 +7,4 @@ class IndexController {
         res.render('index', {title: 'Hotel Triphon Panorama'});
     }
 }
-module.exports = IndexController;
+module.exports = IndexController; 

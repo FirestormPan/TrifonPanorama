@@ -4,13 +4,13 @@ var router = express.Router();
 const IndexContoller = require('../controllers/index_controller');
 
 //translater
-router.get('/', IndexContoller.list);
+router.get('/tr', IndexContoller.list);
 
-/*
+
 router.get('/', function(req, res) {
-  
-  res.redirect('/?lng=gr');
+  res.redirect('/tr?lng=gr');
 });
+/*
 */
 
 /* GET home page. 

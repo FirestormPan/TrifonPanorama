@@ -20,10 +20,13 @@ const i18next = require('i18next');
 const i18nextMiddleware = require('i18next-express-middleware');
 const Backend = require('i18next-node-fs-backend');
 
+
+
 i18next
 .use(i18nextMiddleware.LanguageDetector)
 .use(Backend)
 .init({
+
 backend: {
 loadPath: __dirname + '/locales/{{lng}}/{{ns}}.json'
 },
@@ -32,10 +35,11 @@ detection: {
 order: ['querystring', 'cookie'],
 caches: ['cookie']
 },
-preload: ['gr'],
+preload: ['gr','en'],
 saveMissing: true,
 fallBackLng: ['en']
 });
+
 app.use(i18nextMiddleware.handle(i18next));
 
 
