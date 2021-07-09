@@ -10,8 +10,8 @@ var usersRouter = require('./routes/users');
 var categoryRouter = require('./routes/categories'); 
 
 //Gzip compressing can greatly decrease the size of the response body 
-//var compression = require('compression')
-//app.use(compression())
+var compression = require('compression')
+
 
 var app = express();
 
@@ -42,8 +42,8 @@ fallBackLng: ['en']
 
 app.use(i18nextMiddleware.handle(i18next));
 
-
-
+//using cmpression gzip
+app.use(compression())
 
 
 // view engine setup

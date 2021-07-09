@@ -86,7 +86,7 @@ figcaption {
 
 
 .categoryImageCover{
-  max-width: 510px;
+  max-width: 450px;
   height: 250px;
   object-fit: cover;
 }
@@ -98,7 +98,7 @@ figcaption {
 
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
   height: 250px;
-  max-width: 510px;
+  max-width: 450px;
   margin: 10px;
   border-radius: 6px;
   cursor: pointer;
