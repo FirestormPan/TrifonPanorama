@@ -3,7 +3,7 @@ extends layout
 
 block content
 
-  button(class='backButton' onclick="location.href='/' "  )
+  button(class='backButton' onclick="location.href='/tr?lng=#{i18n.language}' "  )
     img(src=`../images/baseline_keyboard_backspace_black_24dp.png` alt='back button')
     |   #{t("buttons.back_button_text")}
  
@@ -21,9 +21,10 @@ block content
   p #{t("roomInformation."+information)}  #{t("home.more_info_or_book")}    
     a(href="mailto:trifonpanorama@gmail.com?subject=Hotel Panorama") 
       |trifonpanorama@gmail.com 
-  
+    | #{t("home.or_on_phone")}
+    b 00306975302166 , 00306946920243
 
-  button(class='backButton' onclick="location.href='/' "  style="right: -80%;")
+  button(class='backButton' onclick="location.href='/tr?lng=#{i18n.language}' "  style="right: -80%;")
     img(src=`../images/baseline_keyboard_backspace_black_24dp.png`)
 
   

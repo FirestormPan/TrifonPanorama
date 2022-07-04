@@ -22,22 +22,34 @@ const Backend = require('i18next-node-fs-backend');
 
 
 
+const HttpApi =require('i18next-http-backend');
+
+
+
+
 i18next
+.use(HttpApi)
 .use(i18nextMiddleware.LanguageDetector)
 .use(Backend)
 .init({
 
 backend: {
 loadPath: __dirname + '/locales/{{lng}}/{{ns}}.json'
+
 },
-debug: true,
 detection: {
 order: ['querystring', 'cookie'],
 caches: ['cookie']
 },
-preload: ['gr','en'],
+preload: ['en'],
+lng: 'en',
 saveMissing: true,
-fallBackLng: ['en']
+fallBackLng:{
+  'gr': ['en'],
+  'en':['gr'],
+  'default': ['en']
+  },
+
 });
 
 app.use(i18nextMiddleware.handle(i18next));

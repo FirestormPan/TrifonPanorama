@@ -6,7 +6,7 @@ html
 
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta( name="description" content='The hotel "Trifon Panorama Haus" provides accomodations in Sarti, Halkidiki. Located next to the beach(3meters).' )
+    meta( name="description" content='The hotel "Panorama Trifon Haus" provides accomodations in Sarti, Halkidiki. Located next to the beach(3meters). Visit Panorama Trifon Haus, for your hoolidays this Summer!' )
     meta( name="robots" content="index, follow" )
 
 
@@ -21,12 +21,14 @@ html
 
 
   body  
-    img(src="/images/HeadBanner.jpg", alt="Trifon Panorama Haus banner" class="baner")
+    img(src="/images/HeadBanner.jpg", alt="Panorama Trifon Haus banner" class="baner")
     div(class="container-fluid")
       ul.nav.navbar-nav   
         h4 #{t("home.more_info_or_book")}
-           a(href="https://mail.google.com/mail/u/2/#inbox?compose=new"  target="_blank") 
+          a(href="https://mail.google.com/mail/u/2/#inbox?compose=new"  target="_blank") 
             |trifonpanorama@gmail.com  
+          |#{t("home.or_on_phone")}  00306975302166 &emsp;,&emsp; 00306946920243   
+        
       ul.nav.navbar-nav.navbar-right      
         li  
           .btn-group
@@ -49,7 +51,7 @@ html
     br  
 
     br
-    h1 Trifon Panorama Haus
+    h1 Panorama Trifon Haus
     
     br
     br
@@ -73,6 +75,8 @@ html
           p #{t("home.generalDescription")} 
             a(href="https://mail.google.com/mail/u/2/#inbox?compose=new"  target="_blank") 
               |trifonpanorama@gmail.com
+            | #{t("home.or_on_phone")}    
+            b 00306975302166 &emsp;,&emsp; 00306946920243 
           br
           br
           h5 #{t("provided_list.provided_header")} : 
@@ -98,6 +102,8 @@ html
         | #{t("footer.bookHere")} 
         a(href="https://mail.google.com/mail/u/2/#inbox?compose=new"  target="_blank") 
           |trifonpanorama@gmail.com
+        |#{t("home.or_on_phone")}  
+        |00306975302166 &emsp;,&emsp; 00306946920243   
       hr  
       p Mention for legal purposes: The icons are taken from  fonts.google.com, and flag icons from flaticon.com
 
